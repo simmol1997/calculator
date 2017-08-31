@@ -7,15 +7,69 @@
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
 
   	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="js/script.js"></script>
 
 	</head>
 	<body>
 
-    
+    <div class="container">
+      <div class="calculator">
+        <div class="head">
+          <h1> A Themed Calculator </h1>
+          <div class="dropdown">
+            <button class="btn btn-info dropdown-toggle" type="button" data-toggle="dropdown">
+              <span class="caret"></span>
+              Themes
+              <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu">
+              <li class="theme-selector">Theme 1</li>
+              <li class="theme-selector">Theme 2</li>
+              <li class="theme-selector">Theme 3</li>
+            </ul>
+          </div> <!-- dropdown -->
+        </div><!-- head -->
+
+        <div class="output">
+          This is where output will be
+        </div>
+
+        <div class="btn-row">
+          <div class="input-btn">AC</div>
+          <div class="input-btn">CE</div>
+          <div class="input-btn">+/-</div>
+          <div class="input-btn">&divide;</div>
+        </div>
+        <div class="btn-row">
+          <div class="input-btn">7</div>
+          <div class="input-btn">8</div>
+          <div class="input-btn">9</div>
+          <div class="input-btn">&times;</div>
+        </div>
+        <div class="btn-row">
+          <div class="input-btn">4</div>
+          <div class="input-btn">5</div>
+          <div class="input-btn">6</div>
+          <div class="input-btn">-</div>
+        </div>
+        <div class="btn-row">
+          <div class="input-btn">1</div>
+          <div class="input-btn">2</div>
+          <div class="input-btn">3</div>
+          <div class="input-btn">+</div>
+        </div>
+        <div class="btn-row">
+          <div class="input-btn" id="zero">0</div>
+          <div class="input-btn">.</div>
+          <div class="input-btn">=</div>
+        </div>
+      </div>
+    </div>
 
   </body>
 </html>

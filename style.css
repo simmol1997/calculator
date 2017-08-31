@@ -1,0 +1,109 @@
+/*
+  Order
+The styles are ordered just as the page is ordered.
+If an element is displayed before another (right to left and top to bottom) then its class and/or id is also before the other element
+*/
+
+/* container and body */
+.container {
+  display: -webkit-flex;
+  display: flex;
+  width: 100%;
+  height: 100vh;
+}
+/* -------- */
+
+/* calculator body*/
+.calculator {
+  background: rgb(200,200,250);
+  border: 4px solid slategrey;
+  border-radius: 10px;
+  width: 400px;
+  min-height: 500px;
+  margin: auto;
+  padding-bottom: 10px;
+
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+/* --------- */
+
+/* head of calculator */
+.head {
+  width: 100%;
+  background: grey;
+  text-align: center;
+  font-family: "Righteous";
+}
+h1 {
+  font-size: 20px;
+  letter-spacing: 3px;
+}
+.dropdown {
+  margin-bottom: 5px;
+}
+.dropdown-menu {
+  width: 100%;
+  padding: 5px;
+}
+.theme-selector {
+  cursor: pointer;
+  border: 1px solid white;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+.theme-selector:hover {
+  background: lightgrey;
+  border-color: slategrey;
+}
+/* ----------- */
+
+/* output */
+.output {
+  width: 80%;
+  height: 40px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-left: 10px;
+  line-height: 40px;
+  background: white;
+  border: 2px inset silver;
+  border-radius: 5px;
+}
+/* ---------- */
+
+/* Input section */
+.btn-row {
+  margin-top: 5px;
+  width: 95%;
+
+  display: -webkit-flex;
+  display: flex;
+}
+.input-btn {
+  height: 40px;
+  line-height: 40px;
+  border-bottom: 3px solid slategrey;
+  border-radius: 5px;
+  background: lightgrey;
+  margin: 2px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  cursor: pointer;
+
+  -webkit-flex: 1;
+  flex: 1;
+}
+.input-btn:active {
+  border-bottom: 0px solid slategrey;
+}
+#zero {
+  -webkit-flex: 2;
+  flex: 2;
+}
+/* ------- */
