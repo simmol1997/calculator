@@ -28,7 +28,7 @@
               <span class="caret"></span>
             </button>
             <ul class="dropdown-menu">
-              <li class="theme-selector">Theme 1</li>
+              <li id ="electronic" class="theme-selector active">Electronic</li>
               <li class="theme-selector">Theme 2</li>
               <li class="theme-selector">Theme 3</li>
             </ul>
@@ -36,13 +36,14 @@
         </div><!-- head -->
 
         <div class="output">
-          This is where output will be
+          <div id="main-output"></div>
+					<div id="secondary-output"></div>
         </div>
 
         <div class="btn-row">
-          <div class="input-btn">AC</div>
-          <div class="input-btn">CE</div>
-          <div class="input-btn">+/-</div>
+          <div id="ac" class="input-btn">AC</div>
+          <div id="ce" class="input-btn">CE</div>
+          <div id="sign" class="input-btn">+/-</div>
           <div class="input-btn">&divide;</div>
         </div>
         <div class="btn-row">
@@ -64,9 +65,9 @@
           <div class="input-btn">+</div>
         </div>
         <div class="btn-row">
-          <div class="input-btn" id="zero">0</div>
+          <div class="input-btn">0</div>
           <div class="input-btn">.</div>
-          <div class="input-btn">=</div>
+          <div id="equals" class="input-btn">=</div>
         </div>
       </div>
     </div>
