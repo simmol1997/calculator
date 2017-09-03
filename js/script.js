@@ -153,15 +153,16 @@ function calculate(str) {
     num2 = Number(str.substring(indexOfPrioOp+1, iR).split(/[()]/).join(""));
     ans = opToFunc[str[indexOfPrioOp]](num1, num2);
     if (ans < 0)
-      ans = "(-" + ans + ")";
+      ans = "(" + ans + ")";
     str = str.substring(0, iL+1) + ans + str.substr(iR);
     indexOfPrioOp = str.search(/[^\d\.\-()\+]/); //First occurence of divide or multiply symbol
   }
   //No priority operators are left
+  console.log(str);
   var numStr = getNextNumberStr(str);
   str = str.substr(numStr.length);
   ans = Number(numStr.split(/[()]/).join("")); // Removes parantheses and turns into number
-
+  console.log(str);
   while(str.length >= 1) {
 
     var operator = str[0];
