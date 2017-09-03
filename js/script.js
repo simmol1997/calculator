@@ -152,6 +152,8 @@ function calculate(str) {
     //Now iR is the index of the operator after the first prio operator
     num2 = Number(str.substring(indexOfPrioOp+1, iR).split(/[()]/).join(""));
     ans = opToFunc[str[indexOfPrioOp]](num1, num2);
+    if (ans < 0)
+      ans = "(-" + ans + ")";
     str = str.substring(0, iL+1) + ans + str.substr(iR);
     indexOfPrioOp = str.search(/[^\d\.\-()\+]/); //First occurence of divide or multiply symbol
   }
