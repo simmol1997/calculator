@@ -105,11 +105,7 @@ function eraseAll() {
 
 function eraseCurrent() {
   /* Only erases the last input the user made */
-  var currentLen = $("#main-output").text().length;
-  var secondary = $("#secondary-output").text();
-  secondary = secondary.substr(0, secondary.length - currentLen); //Removes the current
-  $("#secondary-output").text(secondary);
-  $("#main-output").text("0");
+  $("#main-output").text("");
 }
 
 function changeSign() {
